@@ -92,7 +92,7 @@ $(document).ready(function () {
 	$('#search').on('keypress', function (event) {
 	    //정상적으로 검색어를 입력한 경우,
 		if(event.keyCode === 13 && $(this).val().length > 0) {
-			window.location.href = "/search/" + looseURIEncode($(this).val());
+			window.location.href = "/search/" + $(this).val().replace(/%/g, "%25").replace(/\\?/g, "%3F").replace(/#/g, "%23");
 			return false;
 		}
 	});
@@ -122,10 +122,10 @@ $(document).ready(function () {
 	$('.imageblock > img').unwrap();
 
 	//prism 호환성 추가
-	$("pre[class^='brush']").each(function(a,f,d){
-		d=f.className&&f.className.substr(6);
-		d=("text"==d||"html"==d||!d)&&"markup"||"js"==d&&"javascript"||d;
-		$(f).removeClass().wrapInner('<code class="language-'+d+'"></code>')
+	$("pre[class^='brush']").each(function (index, element, language) {
+		language = element.className && element.className.substr(6);
+		language = ("text" == language || "html" == language || !language) && "markup" || "js" == language && "javascript" || language;
+		$(element).removeClass().wrapInner('<code class="language-' + language + '"></code>');
 	});
 
 	//Google Analytics
