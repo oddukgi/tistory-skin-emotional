@@ -92,7 +92,7 @@ $(document).ready(function () {
 	$('#search').on('keypress', function (event) {
 	    //정상적으로 검색어를 입력한 경우,
 		if(event.keyCode === 13 && $(this).val().length > 0) {
-			window.location.href = "/search/" + $(this).val().replace(/%/g, "%25").replace(/\\?/g, "%3F").replace(/#/g, "%23");
+			window.location.href = "/search/" + $(this).val().replace(new RegExp("%", "g"), "%25").replace(new RegExp("\\?", "g"), "%3F").replace(new RegExp("#", "g"), "%23");
 			return false;
 		}
 	});
