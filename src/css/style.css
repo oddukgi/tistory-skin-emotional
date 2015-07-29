@@ -749,7 +749,7 @@ article {
 							display: none;
 						}
 						article .blog-post .blog-post-content-wrapper .blog-post-content div.another_category th a.current {
-							border: none;
+							border: none !important;
 						}
 					article .blog-post .blog-post-content-wrapper .blog-post-content div.another_category a:hover {
 						opacity: .7;
