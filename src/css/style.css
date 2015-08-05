@@ -691,13 +691,20 @@ article {
 			article .blog-post .blog-post-content-wrapper .blog-post-admin {
 				width: 90%;
 				max-width: 800px;
-				margin: 1em auto 3em;
+				margin: 1em auto 5em;
+				border-bottom: 1px dashed #cccccc;
 			}
+				article .blog-post .blog-post-content-wrapper .blog-post-admin div:first-child {
+					padding: 0 0 1em 0;
+				}
+				article .blog-post .blog-post-content-wrapper .blog-post-admin div:last-child {
+					padding: 0 0 3em 0;
+				}
 
 			article .blog-post .blog-post-content-wrapper .blog-post-content {
 				width: 90%;
 				max-width: 800px;
-				margin: 1em auto;
+				margin: 2em auto;
 				line-height: 180%;
 				font-size: 1.6rem;
 			}
