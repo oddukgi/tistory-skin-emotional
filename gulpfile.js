@@ -25,7 +25,7 @@ gulp.task('optimize-css', function () {
 //HTML 파일을 압축한다.
 gulp.task('optimize-html', function () {
 	return gulp.src('src/skin.html')
-		.pipe(minifyhtml({comments:true}))
+		.pipe(minifyhtml({comments:false}))
 		.pipe(gulp.dest('dist/'));
 });
 

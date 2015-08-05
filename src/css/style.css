@@ -462,6 +462,10 @@ nav.is-visible {
 			/* 태그 */
 			nav .blog-nav-content .nav-component-wrapper .nav-component-tag {
 				margin-top: 2rem;
+				text-transform: uppercase;
+				line-height: 4rem;
+
+				/* break word */
 				-ms-word-break: break-all;
 				word-break: break-all;
 				word-break: break-word;
@@ -708,7 +712,7 @@ article {
 
 				/* 포스팅 내 코드 */
 				article .blog-post .blog-post-content-wrapper .blog-post-content pre {
-					font-size: 1.3rem;
+					font-size: 1.5rem;
 					padding: 2.5em;
 					border: none;
 					border-radius: 0.8em;
@@ -761,6 +765,8 @@ article {
 				width: 90%;
 				max-width: 800px;
 				margin: 2em auto;
+				word-spacing: .5em;
+				text-transform: uppercase;
 			}
 
 			/* 댓글 */
@@ -769,6 +775,56 @@ article {
 				max-width: 800px;
 				margin: 6em auto 2em;
 			}
+
+				article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment-entry {
+					margin: 1em 0 2em;
+				}
+					article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment-entry .comment-input {
+						border-radius: 3px;
+						border: none;
+						background: #EEEEEE;
+						padding: .3em .5em;
+						margin: 0 0 1em;
+					}
+
+					article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment-entry .comment-textarea {
+						width: 100%;
+						border-radius: 5px;
+						border: none;
+						background: #EEEEEE;
+						padding: 1em;
+					}
+
+				article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment {
+					margin-top: 10px;
+					position: relative;
+					padding: 30px 0 5px 65px;
+					border-top: 1px dashed #EEEEEE;
+				}
+					article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment .blog-post-comment-icon {
+						width: 48px;
+						height: 48px;
+						background-color: #CFEBF7;
+						position: absolute;
+						top: 40px;
+						left: 0;
+						border-radius: 50%;
+
+						padding: 8px 0 0 13px;
+						font-size: 25px;
+						color: white;
+					}
+					article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment .blog-post-comment-head {
+						margin: 10px 0 5px;
+						width: 100%;
+						clear: both;
+						font-weight: 700;
+					}
+					article .blog-post .blog-post-content-wrapper .blog-post-comments .blog-post-comment .blog-post-comment-text {
+						margin: 20px 0;
+						line-height: 180%;
+						font-size: 1.6rem;
+					}
 
 
 			/* 검색 결과 */

@@ -20,7 +20,7 @@
 		<recentComments>30</recentComments>
 		<recentTrackbacks>5</recentTrackbacks>
 		<itemsOnGuestbook>5</itemsOnGuestbook>
-		<tagsInCloud>30</tagsInCloud>
+		<tagsInCloud>40</tagsInCloud>
 		<sortInCloud>1</sortInCloud>
 		<expandComment>1</expandComment>
 		<expandTrackback>0</expandTrackback>
@@ -48,6 +48,6 @@
 			<showValue>1</showValue>
 		</tree>
 		<contentWidth>800</contentWidth>
-		<layout>2</layout>
+		<layout>1</layout>
 	</default>
 </skin>
