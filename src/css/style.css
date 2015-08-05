@@ -701,6 +701,17 @@ article {
 					padding: 0 0 3em 0;
 				}
 
+				@media only screen and (min-width: 768px) {
+					article .blog-post .blog-post-content-wrapper .blog-post-admin div:first-child {
+						display: inline-block;
+						padding: 0 1em 3em 0;
+					}
+					article .blog-post .blog-post-content-wrapper .blog-post-admin div:last-child {
+						display: inline-block;
+						padding: 0 0 3em 0;
+					}
+				}
+
 			article .blog-post .blog-post-content-wrapper .blog-post-content {
 				width: 90%;
 				max-width: 800px;
