@@ -826,7 +826,6 @@ article {
 						font-size: 1.6rem;
 					}
 
-
 			/* 검색 결과 */
 			article .blog-post .blog-post-content-wrapper .blog-post-list {
 				width: 90%;
@@ -863,7 +862,6 @@ article {
 				-o-transform: translateY(-50%);
 				transform: translateY(-50%);
 			}
-
 
 		/* 페이징 */
 		article .blog-post .blog-post-pagination-wrapper {
