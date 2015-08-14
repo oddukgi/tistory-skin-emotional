@@ -19,6 +19,15 @@
 </head>
 
 <body>
+	<!--[if lte IE 10]>
+	<div class="ie-overlay">
+		<div class="ie-overlay-message">
+			<h2>Internet Explorer 10 이하에서는 블로그가 정상적으로 보이지 않습니다.</h2>
+			<h4>Google Chrome 등 웹표준을 지원하는 브라우저를 사용하시길 추천드립니다.</h4>
+		</div>
+	</div>
+	<![endif]-->
+
 	<!-- 로고 -->
 	<div class="blog-logo" title="[##_desc_##]"><h4><a href="[##_blog_link_##]">[##_title_##]</a></h4></div>
 
@@ -137,11 +146,13 @@
 	<!-- 컨텐츠 영역 -->
 	<article>
 		<!-- 메뉴 버튼 -->
-		<div class="blog-open-nav"><span><i class="fa fa-bars"></i></span></div>
+		<!--<div class="blog-open-nav"><span><i class="fa fa-bars"></i></span></div>-->
+		<div class="blog-open-nav blog-open-nav-arrow">
+			<span>toggle menu</span>
+		</div>
 
 		<!-- 본문 영역 -->
 		<div class="blog-post">
-
 
 			<!-- 공지사항 영역 -->
 			<s_notice_rep>
@@ -252,7 +263,7 @@
 				<s_ad_div>
 				<div class="blog-post-admin">
 					<div><i class="fa fa-flag"></i><span class="text-muted">이 포스팅은 현재 <strong class="text-danger">[##_s_ad_s1_label_##]</strong> 상태입니다.</span></div>
-					<div><a class="btn btn-warning btn-sm" href="[##_s_ad_m_link_##]"><i class="fa fa-pencil"></i>수정하기</a> <a id="delete" class="btn btn-danger btn-sm" href="[##_article_rep_link_##]"><i class="fa fa-trash-o"></i>삭제하기</a></div>
+					<div><a class="btn btn-warning btn-xs" href="[##_s_ad_m_link_##]"><i class="fa fa-pencil"></i>수정하기</a> <a id="delete" class="btn btn-danger btn-xs" href="[##_article_rep_link_##]"><i class="fa fa-trash-o"></i>삭제하기</a></div>
 				</div>
 				</s_ad_div>
 
@@ -264,7 +275,7 @@
 				<!-- 태그 영역 -->
 				<s_tag_label>
 				<div class="blog-post-tags">
-					<div><span><i class="fa fa-tags text-info"></i></span> [##_tag_label_rep_##]</div>
+					<div><span><i class="fa fa-tags"></i></span> [##_tag_label_rep_##]</div>
 				</div>
 				</s_tag_label>
 
