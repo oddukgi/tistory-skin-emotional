@@ -71,7 +71,7 @@ i {
 
 /* --------------------------------
 
-IE 전용 컴포넌트
+IE 9 이하 호환성 안내 메시지
 
 -------------------------------- */
 
@@ -86,28 +86,22 @@ IE 전용 컴포넌트
 	bottom: 0;
 
 	background-color: #FFFFFF;
-	-ms-filter: “alpha(opacity=85)”; /* ie 8 */
-	filter: alpha(opacity=85); /* ie lt 7 */
-	opacity: 0.85;
+	-ms-filter: “alpha(opacity=90)”; /* ie 8 */
+	filter: alpha(opacity=90); /* ie lt 7 */
+	opacity: 0.90;
 
 	visibility: visible;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 
-	cursor: pointer;
+	cursor: not-allowed;
 	z-index: 9999;
 }
 	.ie-overlay .ie-overlay-message {
 		position: relative;
-		top: 45%;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		transform: translateY(-50%);
+		top: 20%;
 		text-align: center;
-		background: #929292;
-		padding: 50px;
+		padding: 50px 100px;
 	}
 		.ie-overlay .ie-overlay-message h2 {
 			font-size: 4em;
@@ -142,9 +136,9 @@ IE 전용 컴포넌트
 	background: rgba(255, 0, 29, 0.7);
 	padding: 3px 11px 1px;
 	border-radius: 5px;
-	-webkit-transition: top .5s ease, padding .2s ease, background .2s ease;
-	-moz-transition: top .5s ease, padding .2s ease, background .2s ease;
-	transition: top .5s ease, padding .2s ease, background .2s ease;
+	-webkit-transition: top .5s ease, background .2s ease;
+	-moz-transition: top .5s ease, background .2s ease;
+	transition: top .5s ease, background .2s ease;
 }
 
 /* 화면 넓이가 768 보다 크면, */
@@ -152,25 +146,24 @@ IE 전용 컴포넌트
 	.blog-logo {
 		top: 60px;
 	}
-}
-
-/* 스크롤시 숨김을 위한 클래스 */
-.blog-logo.is-hide {
-	top: -100px;
-}
 
 	/* 마우스 오버시 */
 	.blog-logo:hover {
-		padding: 6px 14px 4px;
+		/*padding: 6px 14px 4px;*/
 		background: rgba(255, 25, 55, 0.9);
 		cursor: pointer;
 	}
+}
 
 	.blog-logo a {
 		color: rgb(255, 255, 255);
 		text-decoration: none;
 	}
 
+/* 스크롤시 숨김을 위한 클래스 */
+.blog-logo.is-hide {
+	top: -100px;
+}
 
 
 /* 메뉴 아이콘 */
@@ -237,7 +230,7 @@ IE 전용 컴포넌트
 	}
 
 	.blog-open-nav-arrow {
-		background-color: rgba(255, 0, 29, 0.7);
+		background-color: rgba(0, 0, 29, 0.7);
 	}
 
 	.blog-open-nav-arrow span {
@@ -262,7 +255,7 @@ IE 전용 컴포넌트
 
 	/* active state, i.e. menu open */
 	.blog-open-nav-arrow:hover {
-		background-color: rgba(255, 0, 29, 0.9);
+		background-color: rgba(0, 0, 29, 0.9);
 	}
 
 	.blog-open-nav-arrow:hover span {
